@@ -4,11 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Logappradeep',
     description:
-<<<<<<< HEAD
-      'Brittany Chiang is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-=======
-      'Logappradeep Pega Senior System Architect',
->>>>>>> e8d15f27d663ba7a7cf111054e7e95caa3a3d4c9
+            'Logappradeep Pega Senior System Architect',
     siteUrl: 'https://logappradeep.me', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@logappradeep',
@@ -24,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Brittany Chiang',
-        short_name: 'Brittany Chiang',
+        name: 'Logappradeep',
+        short_name: 'Logappradeep',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,

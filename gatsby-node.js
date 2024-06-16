@@ -6,6 +6,7 @@
 
 const path = require('path');
 const _ = require('lodash');
+require('events').EventEmitter.defaultMaxListeners = 20;
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;

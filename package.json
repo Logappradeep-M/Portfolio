@@ -1,11 +1,11 @@
 {
-  "name": "v4",
-  "description": "Personal Website V4",
+  "name": "portfolio",
+  "description": "Portfolio Website",
   "version": "1.0.0",
-  "author": "Brittany Chiang <brittany.chiang@gmail.com>",
+  "author": "Portfolio <logappradeep@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiang7/v4"
+    "url": "https://github.com/logappradeep-m/portfolio"
   },
   "keywords": [
     "gatsby"
@@ -20,7 +20,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "postinstall": "corepack enable"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [
@@ -58,7 +59,8 @@
     "react-helmet": "^6.1.0",
     "react-transition-group": "^4.3.0",
     "scrollreveal": "^4.0.5",
-    "styled-components": "^5.3.0"
+    "styled-components": "^5.3.0",
+    "wrangler": "^3.60.3"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",
