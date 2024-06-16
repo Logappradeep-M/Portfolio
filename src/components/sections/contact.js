@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { srConfig, email } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { phone } from '../../config';
 
 const StyledContactSection = styled.section`
   max-width: 600px;
@@ -64,8 +65,14 @@ const Contact = () => {
         Whether you have a question or just want to say hi, I’ll try my best to get back to you!
       </p>
 
-      <a className="email-link" href={`mailto:${email}`}>
-        Say Hello
+      <a className="email-link" href={`mailto:${email}`}style={{ marginRight: '16px' }}>
+        Email
+      </a>
+      <a className="email-link" href={`tel:${phone}`}style={{ marginRight: '16px' }}>
+        Phone
+      </a>
+      <a className="email-link" href={`https://wa.me/${phone}`}target="_blank">
+        Whatsapp
       </a>
     </StyledContactSection>
   );

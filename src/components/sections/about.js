@@ -138,34 +138,7 @@ const About = () => {
               I am a hardworking individual with the ability to accomplish tasks both independently and as part of a team.
               I am quick to learn and adaptable to various roles. 
               I excel in collaborating with others to achieve objectives on time, leveraging my knowledge in Electronics and Communication Engineering and my expertise in Pegasystems, supported by two global-level certifications.
-</p>
-            {/* <p>
-              Hello! My name is Logappradeep and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
-            </p> */}
-
-            {/* <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
-            </p> */}
-
-            {/* <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
-            </p> */}
-
+            </p>
             <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
 

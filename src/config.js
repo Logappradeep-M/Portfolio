@@ -21,12 +21,16 @@ module.exports = {
     },
     // {
     //   name: 'Codepen',
-    //   url: 'https://codepen.io/bchiang7',
+    //   url: 'https://codepen.io/loga',
     // },
     {
       name: 'Phone',
-      url:'tel:+919345694993',
+      url: 'tel:+919345694993',
     },
+    {
+      name: 'WhatsApp',
+      url: 'https://wa.me/+919345694993',
+    }
   ],
 
   navLinks: [
