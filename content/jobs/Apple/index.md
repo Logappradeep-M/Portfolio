@@ -1,10 +1,10 @@
 ---
-date: '2017-12-21'
+date: '2044-02-21'
 title: 'UI Engineer Co-op'
 company: 'Apple'
 location: 'Cupertino, CA'
 range: 'July - December 2017'
-url: 'https://www.apple.com/music/'
+url: 'https://www.apple.com//'
 ---
 
 - Developed and styled interactive web applications for Apple Music using Ember and SCSS

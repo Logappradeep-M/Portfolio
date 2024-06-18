@@ -1,9 +1,9 @@
 ---
 date: '1'
-title: 'Halcyon Theme'
-cover: './halcyon.png'
-github: 'https://github.com/bchiang7/halcyon-site'
-external: 'https://halcyon-theme.netlify.com/'
+title: 'Title'
+cover: './demo.png'
+github: 'link'
+external: 'link'
 tech:
   - VS Code
   - Sublime Text

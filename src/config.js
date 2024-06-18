@@ -8,6 +8,10 @@ module.exports = {
       url: 'https://github.com/Logappradeep-M',
     },
     {
+      name: 'Youtube',
+      url: 'https://youtube.com/@logappradeep',
+    },
+    {
       name: 'Instagram',
       url: 'https://www.instagram.com/you__are__my_world',
     },
@@ -42,12 +46,12 @@ module.exports = {
       name: 'Education',
       url: '/#education',
     },
+    // {
+    //   name: 'Experience',
+    //   url: '/#jobs',
+    // },
     {
-      name: 'Experience',
-      url: '/#jobs',
-    },
-    {
-      name: 'Work',
+      name: 'Projects',
       url: '/#projects',
     },
     {

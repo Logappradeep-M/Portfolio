@@ -178,6 +178,10 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-size: clamp(40px, 8vw, 60px);
   }
+  .small-heading {
+    margin: 0;
+    font-size: clamp(8px, 6vw, 30px);
+  }
 
   .numbered-heading {
     display: flex;
