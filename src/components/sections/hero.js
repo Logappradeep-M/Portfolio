@@ -404,12 +404,12 @@ const StyledHeroSection = styled.section`
 
   h1,
   h2,
-  h3 {
+  h3,
+  p {
     transition: transform 0.3s ease, color 0.3s ease;
 
     &:hover {
       transform: scale(1.05);
-      // color: ${props => props.color};
     }
   }
 
@@ -456,19 +456,20 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, [prefersReducedMotion]);
 
-  const createLetterElements = (text, animateClass) => text.split('').map((char, i) => (
-    <span
-      key={i}
-      className={`${animateClass} _${i + 1}`}
-      onMouseEnter={() => setColor(generateRandomColor())}
-      onTouchStart={e => {
-        setColor(generateRandomColor());
-        e.currentTarget.classList.add('touch');
-      }}
-      onTouchEnd={e => e.currentTarget.classList.remove('touch')}>
-      {char}
-    </span>
-  ));
+  const createLetterElements = (text, animateClass) =>
+    text.split('').map((char, i) => (
+      <span
+        key={i}
+        className={`${animateClass} _${i + 1}`}
+        onMouseEnter={() => setColor(generateRandomColor())}
+        onTouchStart={e => {
+          setColor(generateRandomColor());
+          e.currentTarget.classList.add('touch');
+        }}
+        onTouchEnd={e => e.currentTarget.classList.remove('touch')}>
+        {char}
+      </span>
+    ));
 
   // const one = <h1>Hi, My Name Is</h1>;
   const one = <h1>{createLetterElements('Hi, My Name Is,', 'text-animate-hover')}</h1>;
@@ -507,7 +508,6 @@ const Hero = () => {
       </a>
       <a
         className="email-link"
-        style={{ marginLeft: '16px' }}
         href="https://lptech.logappradeep.me/"
         target="_blank"
         rel="noreferrer">

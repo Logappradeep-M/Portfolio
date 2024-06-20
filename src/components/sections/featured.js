@@ -348,7 +348,7 @@ const Featured = () => {
   return (
     <section id="projects">
       <h2 className="numbered-heading" ref={revealTitle}>
-        Some Things I’ve Built
+        Some Things I’ve Done
       </h2>
 
       <StyledProjectsGrid>
@@ -360,6 +360,12 @@ const Featured = () => {
 
             return (
               <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
+                <div className="project-image">
+                  <a href={external ? external : github ? github : '#'}>
+                    <GatsbyImage image={image} alt={title} className="img" />
+                  </a>
+                </div>
+
                 <div className="project-content">
                   <div>
                     {/* <p className="project-overline">Featured Project</p> */}
@@ -383,17 +389,31 @@ const Featured = () => {
 
                     <div className="project-links">
                       {cta && (
-                        <a href={cta} aria-label="Course Link" className="cta">
+                        <a
+                          href={cta}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="Course Link"
+                          className="cta">
                           Learn More
                         </a>
                       )}
                       {github && (
-                        <a href={github} aria-label="GitHub Link">
+                        <a
+                          href={github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="GitHub Link">
                           <Icon name="GitHub" />
                         </a>
                       )}
                       {external && !cta && (
-                        <a href={external} aria-label="External Link" className="external">
+                        <a
+                          href={external}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="External Link"
+                          className="external">
                           <Icon name="External" />
                         </a>
                       )}
@@ -401,11 +421,11 @@ const Featured = () => {
                   </div>
                 </div>
 
-                <div className="project-image">
+                {/* <div className="project-image">
                   <a href={external ? external : github ? github : '#'}>
                     <GatsbyImage image={image} alt={title} className="img" />
                   </a>
-                </div>
+                </div> */}
               </StyledProject>
             );
           })}
