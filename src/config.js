@@ -34,7 +34,11 @@ module.exports = {
     {
       name: 'WhatsApp',
       url: 'https://wa.me/+919345694993',
-    }
+    },
+    {
+      name: 'Pega',
+      url: 'https://accounts.pega.com/profile/Logappradeep?',
+    },
   ],
 
   navLinks: [

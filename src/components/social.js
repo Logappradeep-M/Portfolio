@@ -24,11 +24,11 @@ const StyledSocialList = styled.ul`
 
   li {
     &:last-of-type {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     a {
-      padding: 10px;
+      padding: 9px;
 
       &:hover,
       &:focus {
@@ -36,8 +36,8 @@ const StyledSocialList = styled.ul`
       }
 
       svg {
-        width: 20px;
-        height: 20px;
+        width: 40px;
+        height: 40px;
       }
     }
   }
