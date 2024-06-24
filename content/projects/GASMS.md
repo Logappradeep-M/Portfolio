@@ -10,11 +10,11 @@ tech:
   - 'Pega'
   - 'Pega 8.8'
 
-company: 'Vsb College'
+company: 'V.S.B College'
 showInProjects: True
 ---
 
-Scenario Overview
+#### Scenario Overview
 
 - GasMS is an online application for a gas agency that customers from different geographical regions use to book gas cylinders.
 - GasMS is owned and operated by a company called GMSCo.

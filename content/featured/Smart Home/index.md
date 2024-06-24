@@ -4,6 +4,7 @@ title: 'Smart Home'
 cover: './smart.png'
 github: ''
 external: ''
+pega: ''
 cta: ''
 tech:
   - Arduino

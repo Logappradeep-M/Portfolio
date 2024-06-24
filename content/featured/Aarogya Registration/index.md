@@ -4,6 +4,7 @@ title: 'Aarogya Registration for Hospital and DayCare'
 cover: './aarogya.png'
 github: ''
 external: ''
+pega: './post_data/Aarogya.pdf'
 cta: ''
 tech:
   - Pega

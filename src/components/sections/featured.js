@@ -322,6 +322,7 @@ const Featured = () => {
               tech
               github
               external
+              pega
               cta
             }
             html
@@ -355,7 +356,7 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover, cta } = frontmatter;
+            const { external, title, tech, github, cover, pega, cta } = frontmatter;
             const image = getImage(cover);
 
             return (
@@ -407,6 +408,15 @@ const Featured = () => {
                           <Icon name="GitHub" />
                         </a>
                       )}
+                      {pega && (
+                        <a
+                          href={pega}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="GitHub Link">
+                          <Icon name="Pega" />
+                        </a>
+                      )}
                       {external && !cta && (
                         <a
                           href={external}
@@ -421,11 +431,11 @@ const Featured = () => {
                   </div>
                 </div>
 
-                {/* <div className="project-image">
+                <div className="project-image">
                   <a href={external ? external : github ? github : '#'}>
                     <GatsbyImage image={image} alt={title} className="img" />
                   </a>
-                </div> */}
+                </div>
               </StyledProject>
             );
           })}

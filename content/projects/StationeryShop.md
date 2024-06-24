@@ -10,9 +10,11 @@ tech:
   - 'Pega'
   - 'Pega 8.8'
 
-company: 'Vsb College'
+company: 'V.S.B College'
 showInProjects: True
 ---
+
+#### Scenario Overview
 
 - This application is managed by ABC Corp to support employee’s stationery request.
 - This application captures the employee details and raise request for the stationary.
