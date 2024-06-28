@@ -10,8 +10,10 @@
 
 <p align="center">
   <a href="https://app.netlify.com/sites/logaportfilio/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status" style="margin-right: 30px" />
-    <a href="https://dash.cloudflare.com/71cbd8525e7295aa38ce8430cc9741e1/pages/view/portfolio" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/52b94519-d2ec-4bff-92df-fdf691d5917a/deploy-status" alt="Netlify Status"/>
+    </a>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a  href="https://dash.cloudflare.com/71cbd8525e7295aa38ce8430cc9741e1/pages/view/portfolio" target="_blank">
     <img src="https://img.shields.io/badge/Cloudflare-Online-brightgreen" alt="Cloudflare Status" />
   </a>
 </p>

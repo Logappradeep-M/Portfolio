@@ -501,7 +501,7 @@ const Hero = () => {
       <a
         className="email-link"
         style={{ marginRight: '16px' }}
-        href="/resume.pdf"
+        href="/resume/resume.pdf"
         target="_blank"
         rel="noreferrer">
         Resume
