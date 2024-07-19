@@ -39,8 +39,8 @@ const StyledLinkWrapper = styled.div`
 const Email = ({ isHome }) => (
   <Side isHome={isHome} orientation="right">
     <StyledLinkWrapper>
-      <a href={`mailto:${email}`}>{email}</a>
-      <a href={`tel:${phone}`}>{phone}</a>
+      <a href={`mailto:${email}`}target="_blank" rel="noopener noreferrer">{email}</a>
+      <a href={`https://wa.me/${phone}`}target="_blank" rel="noopener noreferrer">{phone}</a>
     </StyledLinkWrapper>
   </Side>
   
