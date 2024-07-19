@@ -80,6 +80,15 @@
 
    Your production site is now running at `http://localhost:9000`
 
+## 🚀 Hosting
+
+- <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+- <a href="https://www.cloudflare.com/" target="_blank">Cloudflare</a>
+- <a href="https://vercel.com/" target="_blank">Vercel</a>
+- <a href="https://www.github.com/" target="_blank">GitHub Pages</a>
+- <a href="https://surge.sh/" target="_blank">Surge</a>
+- <a href="https://render.com/" target="_blank">Render</a>
+
 ## 🚨 Forking this repo (please read!)
 
 Many people have contacted me asking me if they can use this code for their own website, and the answer to that question is usually **yes, with attribution**.
