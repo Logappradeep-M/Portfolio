@@ -1,10 +1,11 @@
 ---
-date: '3'
+date: '1'
 title: 'Smart Home'
 cover: './smart.png'
 github: ''
 external: ''
 pega: ''
+others: ''
 cta: ''
 tech:
   - Arduino

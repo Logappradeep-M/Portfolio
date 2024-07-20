@@ -196,27 +196,47 @@ const ArchivePage = ({ location, data }) => {
                       <td className="links">
                         <div>
                           {external && (
-                            <a href={external} aria-label="External Link">
+                            <a
+                              href={external}
+                              aria-label="External Link"
+                              target="_blank"
+                              rel="noopener noreferrer">
                               <Icon name="External" />
                             </a>
                           )}
                           {pega && (
-                            <a href={pega} aria-label="External Link">
+                            <a
+                              href={pega}
+                              aria-label="External Link"
+                              target="_blank"
+                              rel="noopener noreferrer">
                               <Icon name="Pega" />
                             </a>
                           )}
                           {github && (
-                            <a href={github} aria-label="GitHub Link">
+                            <a
+                              href={github}
+                              aria-label="GitHub Link"
+                              target="_blank"
+                              rel="noopener noreferrer">
                               <Icon name="GitHub" />
                             </a>
                           )}
                           {ios && (
-                            <a href={ios} aria-label="Apple App Store Link">
+                            <a
+                              href={ios}
+                              aria-label="Apple App Store Link"
+                              target="_blank"
+                              rel="noopener noreferrer">
                               <Icon name="AppStore" />
                             </a>
                           )}
                           {android && (
-                            <a href={android} aria-label="Google Play Store Link">
+                            <a
+                              href={android}
+                              aria-label="Google Play Store Link"
+                              target="_blank"
+                              rel="noopener noreferrer">
                               <Icon name="PlayStore" />
                             </a>
                           )}

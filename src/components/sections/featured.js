@@ -308,7 +308,7 @@ const Featured = () => {
     {
       featured: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/content/featured/" } }
-        sort: { fields: [frontmatter___date], order: ASC }
+        sort: { fields: [frontmatter___date], order: DESC }
       ) {
         edges {
           node {
@@ -323,6 +323,7 @@ const Featured = () => {
               github
               external
               pega
+              others
               cta
             }
             html
@@ -356,7 +357,7 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover, pega, cta } = frontmatter;
+            const { external, title, tech, github, cover, pega, others, cta } = frontmatter;
             const image = getImage(cover);
 
             return (
@@ -372,7 +373,9 @@ const Featured = () => {
                     {/* <p className="project-overline">Featured Project</p> */}
 
                     <h3 className="project-title">
-                      <a href={external}>{title}</a>
+                      <a href={external || github} target="_blank" rel="noopener noreferrer">
+                        {title}
+                      </a>
                     </h3>
 
                     <div
@@ -415,6 +418,15 @@ const Featured = () => {
                           rel="noopener noreferrer"
                           aria-label="GitHub Link">
                           <Icon name="Pega" />
+                        </a>
+                      )}
+                      {others && (
+                        <a
+                          href={others}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="GitHub Link">
+                          <Icon name="Link" />
                         </a>
                       )}
                       {external && !cta && (

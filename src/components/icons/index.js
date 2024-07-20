@@ -18,3 +18,4 @@ export { default as IconStar } from './star';
 export { default as IconTwitter } from './twitter';
 export { default as IconYoutube } from './youtube';
 export { default as IconPega } from './pega';
+export { default as IconLink } from './link';

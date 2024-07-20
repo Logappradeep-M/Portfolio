@@ -278,7 +278,16 @@ const Projects = () => {
     <StyledProjectsSection>
       <h2 ref={revealTitle}>Other Projects</h2>
 
-      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
+      {/* <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink} >
+        view the archive
+      </Link> */}
+
+      <Link
+        className="inline-link archive-link"
+        href="/archive"
+        target="_blank"
+        rel="noopener noreferrer"
+        ref={revealArchiveLink}>
         view the archive
       </Link>
 
