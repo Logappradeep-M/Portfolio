@@ -47,7 +47,10 @@ const StyledHeader = styled.header`
       !props.scrolledToTop &&
       css`
         height: var(--nav-scroll-height);
-        transform: translateY(calc(var(--nav-scroll-height) * -1));
+        // transform: translateY(calc(var(--nav-scroll-height) * 0)); // Use this line to keep top Navigation Bar Stable
+        transform: translateY(
+          calc(var(--nav-scroll-height) * -1)
+        ); // Use this line to hide Navigation Bar during scrolling
         box-shadow: 0 10px 30px -10px var(--navy-shadow);
       `};
   }

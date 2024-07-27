@@ -30,7 +30,7 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Layout, Hero, About, Education, Featured, Projects, Contact } from '@components';
+import { Layout, Hero, About, Education, Jobs, Featured, Projects, Contact } from '@components';
 
 const StyledMainContainer = styled.main`
   counter-reset: section;
@@ -60,7 +60,7 @@ const IndexPage = ({ location }) => {
         <Hero />
         <About />
         <Education />
-        {/* <Jobs /> */}
+        <Jobs />
         <Featured />
         <Projects />
         <Contact />

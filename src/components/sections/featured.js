@@ -373,7 +373,10 @@ const Featured = () => {
                     {/* <p className="project-overline">Featured Project</p> */}
 
                     <h3 className="project-title">
-                      <a href={external || github} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={external || github || pega || others || cta}
+                        target="_blank"
+                        rel="noopener noreferrer">
                         {title}
                       </a>
                     </h3>
@@ -392,7 +395,7 @@ const Featured = () => {
                     )}
 
                     <div className="project-links">
-                      {cta && (
+                      {cta && !external && (
                         <a
                           href={cta}
                           target="_blank"
@@ -402,6 +405,39 @@ const Featured = () => {
                           Learn More
                         </a>
                       )}
+
+                      {!cta && external && (
+                        <a
+                          href={external}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="Course Link"
+                          className="cta">
+                          Learn More
+                        </a>
+                      )}
+
+                      {external && cta && (
+                        <>
+                          <a
+                            href={cta}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Course Link"
+                            className="cta">
+                            Learn More
+                          </a>
+                          <a
+                            href={external}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="External Link"
+                            className="external">
+                            <Icon name="External" />
+                          </a>
+                        </>
+                      )}
+
                       {github && (
                         <a
                           href={github}
@@ -416,7 +452,7 @@ const Featured = () => {
                           href={pega}
                           target="_blank"
                           rel="noopener noreferrer"
-                          aria-label="GitHub Link">
+                          aria-label="pega Link">
                           <Icon name="Pega" />
                         </a>
                       )}
@@ -427,16 +463,6 @@ const Featured = () => {
                           rel="noopener noreferrer"
                           aria-label="GitHub Link">
                           <Icon name="Link" />
-                        </a>
-                      )}
-                      {external && !cta && (
-                        <a
-                          href={external}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label="External Link"
-                          className="external">
-                          <Icon name="External" />
                         </a>
                       )}
                     </div>

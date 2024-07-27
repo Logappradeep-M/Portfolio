@@ -6,6 +6,7 @@ import { srConfig } from '@config';
 import { KEY_CODES } from '@utils';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import { Icon } from '@components/icons';
 
 const StyledJobsSection = styled.section`
   max-width: 700px;
@@ -177,6 +178,7 @@ const Jobs = () => {
               title
               company
               location
+              location_url
               range
               url
             }
@@ -273,7 +275,7 @@ const Jobs = () => {
           {jobsData &&
             jobsData.map(({ node }, i) => {
               const { frontmatter, html } = node;
-              const { title, url, company, range } = frontmatter;
+              const { title, url, company, location, location_url, range } = frontmatter;
 
               return (
                 <CSSTransition key={i} in={activeTabId === i} timeout={250} classNames="fade">
@@ -293,6 +295,20 @@ const Jobs = () => {
                         </a>
                       </span>
                     </h3>
+                    <h5>
+                      <span>
+                        <a href={location_url} target="_blank" rel="noopener noreferrer">
+                          {location}
+                        </a>
+                      </span>
+                      <a
+                        href={location_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="pega Link">
+                        <Icon name="Location" />
+                      </a>
+                    </h5>
 
                     <p className="range">{range}</p>
 
