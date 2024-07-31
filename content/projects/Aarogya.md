@@ -3,7 +3,7 @@ date: '2023-01-02'
 title: 'Aarogya Registration'
 github: ''
 external: ''
-pega: './post_data/Aarogya.pdf'
+pega: '../post_data/Aarogya.pdf'
 ios: ''
 android: ''
 tech:
