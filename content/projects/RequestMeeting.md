@@ -5,7 +5,7 @@ github: ''
 external: ''
 ios: ''
 android: ''
-pega: './post_data/RequestMeeting.pdf'
+pega: '../post_data/RequestMeeting.pdf'
 tech:
   - 'Pega'
   - 'Pega 8.8'

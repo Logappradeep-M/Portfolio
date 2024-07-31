@@ -5,7 +5,7 @@ github: ''
 external: ''
 ios: ''
 android: ''
-pega: './post_data/StationeryShop.pdf'
+pega: '../post_data/StationeryShop.pdf'
 tech:
   - 'Pega'
   - 'Pega 8.8'
